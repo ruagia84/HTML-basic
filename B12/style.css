@@ -1,58 +1,64 @@
 html, body{
-    /* background-color: grey; */
     width: 100%;
     height: 100%;
-    padding: 0 3%;  /* top-bottom 0, left-right 3%;*/
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
 header{
-    /* background-color: brown; */
-    height: 8%;
+    height: 10%;
 }
 
 header img{
     height: 90%;
-    margin-left: 10px;
-    margin-top: 4px;
-    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    float:left;
 }
 
 header ul{
-    list-style-type: none;  
-    padding: 0; 
-    float: left;
-    margin: 30px;
+    list-style-type: none;
+    
+    font-size:large;
 }
 
 header ul li{
     float: left;
-    margin-left: 20px;
+    margin-top: 45px;
+    margin-left: 30px;
 }
 
 header button{
-    height: 100%;
-    border: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 90%;
+    width: 70px;
+    border: none; 
     float: right;
-    width: 80px;
-    margin-right: 100px;
     background-color: #006845;
     color: white;
+    transition: 2s;
+}
+
+header button:hover{
+    border: 2px solid #006845;
+    background-color: white;
+    color: #006845;
+    cursor: pointer;
+    opacity: 0.3;
 }
 
 .intro{
     width: 100%;
-    height: 100%;
-    float: left;
-    /* background-color: blueviolet; */
+    height: 90%;
 }
 
 .intro img{
-    height: 90%;
+    height: 100%;
     width: 40%;
     float: left;
 }
@@ -61,29 +67,49 @@ header button{
     float: left;
     height: 100%;
     width: 60%;
-    /* background-color: coral; */
     box-sizing: border-box;
-    padding-top: 250px;
-    padding-left: 10%;
+    padding-top: 18%;
+    padding-left: 15%;
     padding-right: 10%;
-
 }
 
-.intro h2, .intro p{
+.intro h1, .intro p{
     text-align: right;
 }
 
-.intro h2{
+.intro h1{
     color: #006845;
-}
-
-.intro p{
-    font-size: 12px;
 }
 
 .information{
     width: 100%;
     height: 50%;
-    
+    padding-left: 15%;
 }
 
+.bg-green{
+    background-color: #006845;
+}
+
+.information img{
+    height: 100%;
+    float: left;
+    position: relative;
+    top: 40px;
+}
+
+.information p{
+    color: white;
+    font-size: 24px;
+    float: left;
+    width: 35%;
+    margin-top: 200px;
+}
+
+#img-position-custom{
+    top: -50px;
+}
+
+img+p{
+    margin-left: 200px;
+}
